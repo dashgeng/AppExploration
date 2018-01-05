@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7bc-l4-dUg">
+                                <rect key="frame" x="146" y="140" width="83" height="29"/>
+                                <segments>
+                                    <segment title="默认"/>
+                                    <segment title="高亮"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didTapStyleSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="2l4-bP-nTE"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jb6-ja-D27">
+                                <rect key="frame" x="146" y="248" width="83" height="29"/>
+                                <segments>
+                                    <segment title="显示"/>
+                                    <segment title="隐藏"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didTapHiddenSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="9w6-4A-A1f"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状态栏样式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfu-qX-pA5">
+                                <rect key="frame" x="144" y="111" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状态栏是否隐藏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNP-3U-bZ2">
+                                <rect key="frame" x="126" y="219" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jb6-ja-D27" firstAttribute="top" secondItem="7bc-l4-dUg" secondAttribute="bottom" constant="80" id="4NN-hn-w1N"/>
+                            <constraint firstItem="wfu-qX-pA5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ggs-Jt-c4c"/>
+                            <constraint firstItem="jb6-ja-D27" firstAttribute="top" secondItem="gNP-3U-bZ2" secondAttribute="bottom" constant="8" id="Lyb-DY-hAr"/>
+                            <constraint firstItem="7bc-l4-dUg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="Yaj-dB-Dy6"/>
+                            <constraint firstItem="gNP-3U-bZ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bk0-iB-8my"/>
+                            <constraint firstItem="7bc-l4-dUg" firstAttribute="top" secondItem="wfu-qX-pA5" secondAttribute="bottom" constant="8" id="pcH-Ha-uu6"/>
+                            <constraint firstItem="7bc-l4-dUg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tGN-DJ-xa3"/>
+                            <constraint firstItem="jb6-ja-D27" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xr7-Aa-VKa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
