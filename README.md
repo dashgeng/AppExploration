@@ -5,6 +5,7 @@
 
 - StatusBarControl 修改状态栏样式，隐藏或显示状态栏。
 - TabBarControl 标签栏的简单运用：默认/选中状态下字体颜色，图标的设置。
+- Delegation 委托代理的简单运用。
 
 # 开源协议
 
